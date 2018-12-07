@@ -1,0 +1,53 @@
+.error-color {
+  color: purple;
+  font-size: 18px;
+}
+.wrapper {
+  border-style: solid;
+  padding: 15px;
+}
+.btn-reset {
+  background-color: plum;
+  color:  rgb(72, 72, 72);
+  font-size: 16px;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 8px;
+}
+.btn-update {
+  background-color: rgba(69, 140, 69, 0.66);
+  color:  rgb(72, 72, 72);
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 8px;
+}
+.btn-cancel {
+  background-color:  rgba(174, 58, 58, 0.639);
+  color:  rgb(72, 72, 72);
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 8px;
+}
+
+table {
+  margin: 8px;
+  width: 100%;
+}
+th {
+  color: rgb(72, 72, 72);
+  text-align: left;
+  font: bold;
+  font-size: 24px;
+}
+th, td {
+  padding: 1em;
+}
+li {
+  list-style-type: none;
+}
+input {
+  color: rgb(106, 103, 103);
+  font-size: 20px;
+}

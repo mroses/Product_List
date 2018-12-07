@@ -1,0 +1,30 @@
+<section class="wrapper">
+  <div class="error-color" *ngIf='errors.length'>
+      <ul>
+        <li *ngFor='let error of errors'>{{ error }}</li>
+      </ul>
+  </div>
+  <h1>Product Details</h1>
+  <div class="details">
+    <table>
+      <tr>
+        <th>Name</th>
+          <td>{{ product?.name }}</td>
+      </tr>
+      <tr>
+        <th>Qty</th>
+          <td>{{ product?.qty }}</td>
+      </tr>
+      <tr>
+        <th>Price</th>
+          <td>{{ product?.price | currency }}</td>
+      </tr>
+      <tr>
+        <th></th>
+          <td><button class='btn-purple' routerLink=''>BACK</button>
+            <button class='btn-red' (click)="onDelete(product?._id)">DELETE</button>
+          </td>
+      </tr>
+    </table>
+  </div>
+</section>

@@ -1,0 +1,52 @@
+.btn-add-new {
+  background-image: linear-gradient(rgba(14, 187, 106, 0.762), rgba(21, 21, 96, 0.584));
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  float: right;
+  position: absolute;
+  top: 90px;
+  right: 20px;
+}
+.btn-edit {
+  background-image: linear-gradient(navajowhite, rgba(21, 21, 96, 0.584));
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 4px;
+  padding: 10px;
+  color: white;
+}
+.btn-details {
+  background-image: linear-gradient(pink, rgba(21, 21, 96, 0.584));
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 4px;
+  padding: 10px;
+  color: white;
+}
+.wrapper {
+  border-style: solid;
+  padding: 15px;
+}
+table {
+  border-collapse: collapse;
+  margin: 8px;
+  width: 100%;
+}
+th {
+  background-color: gray;
+  color: white;
+  text-align: left;
+}
+th, td {
+  border: 1px solid black;
+  padding: 1em;
+}
+h1 {
+  margin-top: 5px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+

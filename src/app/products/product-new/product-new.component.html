@@ -1,0 +1,34 @@
+<section class="wrapper">
+    <h1>New Product</h1>
+  <div class="error-color" *ngIf='errors.length'>
+  <ul>
+    <li *ngFor='let error of errors'>{{ error }}</li>
+  </ul>
+</div>
+  <form (submit)="onSubmit($event, form)" #form="ngForm">
+    <table>
+      <tr>
+        <th><label for=''>Name</label></th>
+          <td><input type='text' name="product.name" [(ngModel)]="product.name"></td>
+      </tr>
+      <tr>
+        <th><label for=''>Qty</label></th>
+          <td><input type='text' name="product.qty" [(ngModel)]="product.qty"></td>
+      </tr>
+      <tr>
+        <th><label for=''>Price</label></th>
+          <td><input type='text' name="product.price" [(ngModel)]="product.price"></td>
+      </tr>
+      <tr>
+        <th></th>
+          <td>
+            <span (click)="onEvent($event)">
+                <button class="btn-reset" (click)="onReset($event, form)">RESET</button>
+            </span>
+              <button class="btn-cancel" routerLink=''>CANCEL</button>
+              <button class="btn-submit">CREATE</button>
+          </td>
+      </tr>
+    </table>
+  </form>
+</section>
